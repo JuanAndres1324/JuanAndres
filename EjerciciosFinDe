@@ -1,0 +1,479 @@
+* @author juanA
+ */
+public class PositivoyNegativo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        double numero = scanner.nextDouble();
+
+        if (numero > 0) {
+            System.out.println("El número es Positivo.");
+        } else if (numero < 0) {
+            System.out.println("El número es Negativo.");
+        } else {
+            System.out.println("El número es Cero.");
+        }
+    }
+ 
+}
+ * @author juanA
+ */
+public class ParOimpar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        int numero = scanner.nextInt();
+
+        if (numero % 2 == 0) {
+            System.out.println("El número es Par.");
+        } else {
+            System.out.println("El número es Impar.");
+        }
+    }
+}
+
+ * @author juanA
+ */
+public class MultiploDe8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        int numero = scanner.nextInt();
+
+        if (numero % 8 == 0) {
+            System.out.println("El número " + numero + " es múltiplo de 8.");
+        } else {
+            System.out.println("El número " + numero + " no es múltiplo de 8.");
+        }
+    }
+}
+ * @author juanA
+ */
+public class CuantasCifrasTiene {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        int numero = scanner.nextInt();
+
+        int cifras = contarCifras(numero);
+
+        System.out.println("Número ingresado: " + numero);
+        System.out.println("Cifras esperadas: " + cifras);
+    }
+
+    // Función para contar las cifras en un número
+    public static int contarCifras(int numero) {
+        if (numero == 0) {
+            return 1; // El número 0 tiene una cifra
+        }
+        
+        int contador = 0;
+        while (numero != 0) {
+            numero = numero / 10;
+            contador++;
+        }
+        
+        return contador;
+    }
+}
+ * @author juanA
+ */
+public class NingunoDelosDosesIgualOdife {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int numero3 = scanner.nextInt();
+
+        if (numero1 == numero2 && numero2 == numero3) {
+            System.out.println("Todos los números son iguales.");
+        } else if (numero1 != numero2 && numero2 != numero3 && numero1 != numero3) {
+            System.out.println("Todos los números son diferentes.");
+        } else {
+            System.out.println("Ninguno de los dos es igual o diferente.");
+        }
+    }
+}
+* @author juanA
+ */
+public class OrdenCrecienteOdecreciente {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int numero3 = scanner.nextInt();
+
+        if (numero1 < numero2 && numero2 < numero3) {
+            System.out.println("Está en orden creciente.");
+        } else if (numero1 > numero2 && numero2 > numero3) {
+            System.out.println("Está en orden decreciente.");
+        } else {
+            System.out.println("No aumenta ni disminuye el orden.");
+        }
+    }
+}
+ * @author juanA
+ */
+public class NumeroMayor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int numero3 = scanner.nextInt();
+
+        int mayor = numero1;  
+
+        if (numero2 > mayor) {
+            mayor = numero2;  
+        }
+
+        if (numero3 > mayor) {
+            mayor = numero3; 
+        }
+
+        System.out.println("El número mayor es: " + mayor);
+    }
+}
+ * @author juanA
+ */
+public class Sumar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        int resultado = numero1 + numero2;
+
+        System.out.println("Resultado: " + resultado);
+    }
+}
+ * @author juanA
+ */
+public class MayordeEdadoMenor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese su edad: ");
+        int edad = scanner.nextInt();
+        
+        if (edad >= 18) {
+            System.out.println("Usted es mayor de edad.");
+        } else {
+            System.out.println("Usted es menor de edad.");
+        }
+    }
+}
+ * @author juanA
+ */
+public class MayusculaoMinuscula {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Ingrese Letra:");
+        char letra = scanner.next().charAt(0);
+        
+        if (Character.isUpperCase(letra))
+            System.out.println("Esa letra es mayuscula");
+        else if (Character.isLowerCase(letra))
+            System.out.println("Esa letra es minuscula");
+    }
+}
+ * @author juanA
+ */
+public class CalcularIndiceMasa {
+       public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa tu peso en kg: ");
+        int peso = scanner.nextInt();
+
+        System.out.print("Ingresa tu altura en metros: ");
+        int altura = scanner.nextInt();
+
+        int imc = calcularIMC(peso, altura);
+        String estado = determinarEstado(imc);
+
+        System.out.println("Tu IMC es: " + imc);
+        System.out.println("Estado: " + estado);
+    }
+
+    public static int calcularIMC(int peso, int altura) {
+        return peso / (altura * altura);
+    }
+
+    public static String determinarEstado(int imc) {
+        if (imc < 16) {
+            return "Criterio de ingreso en hospital";
+        } else if (imc >= 16 && imc < 17) {
+            return "infra peso";
+        } else if (imc >= 17 && imc < 18) {
+            return "bajo peso";
+        } else if (imc >= 18 && imc < 25) {
+            return "peso normal (saludable)";
+        } else if (imc >= 25 && imc < 30) {
+            return "sobrepeso (obesidad de grado I)";
+        } else if (imc >= 30 && imc < 35) {
+            return "sobrepeso crónico (obesidad de grado II)";
+        }
+           return null;
+    }
+}
+ * @author juanA
+ */
+public class SIesMultiploDelotro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         System.out.print("Agregar primero numero: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Agregar segundo numero: ");
+        int numero2 = scanner.nextInt();
+
+        if (esMultiplo(numero1, numero2)) {
+            System.out.println(numero1 + " es múltiplo de " + numero2);
+        } else if (esMultiplo(numero2, numero1)) {
+            System.out.println(numero2 + " es múltiplo de " + numero1);
+        } else {
+            System.out.println("No son multiplos.");
+        }
+    }
+
+    public static boolean esMultiplo(int numero1, int numero2) {
+        return numero1 % numero2 == 0;
+    }
+}
+ * @author juanA
+ */
+public class PedirHora {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Hora: ");
+        int Hora = scanner.nextInt();
+        
+        System.out.print("Minuto: ");
+        int Minuto = scanner.nextInt();
+        
+        System.out.println("Segundo");
+        int Segundo = scanner.nextInt();
+        
+        System.out.println("La hora es: " + Hora + ":" + Minuto + ":" + Segundo);
+        
+    }
+    
+}
+ * @author juanA
+ */
+public class DescuentodelVeinte {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa el número total: ");
+        double total = scanner.nextDouble();
+        
+        if (total > 300){
+            double descuento = total * 0.20;
+            
+            double totalapagar = total - descuento;
+            
+            System.out.println("el descuento es de:" + descuento);
+            System.out.println("total a pagar es:" + totalapagar);
+            
+        }
+    }        
+}
+ * @author juanA
+ */
+public class TipodeClima {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("agregue temperatura:");
+        int TP = scanner.nextInt();
+        
+        if (TP <= 10){
+            System.out.println("frio");
+        }
+        else if (TP <= 20  ){
+            System.out.println("nublado");
+        }
+        else if (TP <= 30  ){
+            System.out.println("caluroso");
+        }
+        else if (TP > 30  ){
+            System.out.println("tropical");
+        }
+    }
+}
+ * @author juanA
+ */
+public class NumeroDeDiasDelMes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+         System.out.print("Ingresa un número entre 1 y 12 para representar un mes: ");
+         int mes = scanner.nextInt();
+         
+         if (mes == 1){
+             System.out.println("enero cuenta con 31 dias");
+         }
+         if (mes == 2){
+             System.out.println("febrero cuenta con 28 dias");
+         }
+         if (mes == 3){
+             System.out.println("marzo cuenta con 31 dias");
+         }
+         if (mes == 4){
+             System.out.println("abril cuenta con 30 dias");
+         }
+         if (mes == 5){
+             System.out.println("mayo cuenta con 31 dias");
+         }
+         if (mes == 6){
+             System.out.println("junio cuenta con 30 dias");
+         }
+         if (mes == 7){
+             System.out.println("julio cuenta con 31 dias");
+         }
+         if (mes == 8){
+             System.out.println("agosto cuenta con 31 dias");
+         }
+         if (mes == 9){
+             System.out.println("septiembre cuenta con 30 dias");
+         }
+         if (mes == 10){
+             System.out.println("octubre cuenta con 31 dias");
+         }
+         if (mes == 11){
+             System.out.println("noviembre cuenta con 30 dias");
+         }
+         if (mes == 12){
+             System.out.println("diciembre cuenta con 31 dias");
+         }
+               
+         
+    }
+}
+ * @author juanA
+ */
+public class Salaria {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa  nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingresa  edad: ");
+        int edad = scanner.nextInt();
+
+        System.out.print("Ingresa  salario: ");
+        double salario = scanner.nextDouble();
+
+        if (edad < 17) {
+            System.out.println("LNo puede trabajar.");
+        } else if (edad >= 18 && edad <= 50) {
+            salario *= 1.05; 
+        } else if (edad >= 51 && edad <= 60) {
+            salario *= 1.1;  
+        } else {
+            salario *= 1.15; 
+        }
+
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad + " años");
+        System.out.println("Salario: $" + salario);
+    }
+}
+ * @author juanA
+ */
+public class MayusculaoMinuscula {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Ingrese Letra:");
+        char letra = scanner.next().charAt(0);
+        
+        if (Character.isUpperCase(letra))
+            System.out.println("Esa letra es mayuscula");
+        else if (Character.isLowerCase(letra))
+            System.out.println("Esa letra es minuscula");
+    }
+}
+ * @author juanA
+ */
+public class SignoZodiacal {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Ingrese el día de su nacimiento (1-31): ");
+            int dia = scanner.nextInt();
+            
+            System.out.print("Ingrese el mes de su nacimiento (1-12): ");
+            int mes = scanner.nextInt();
+            
+            String signoZodiacal = determinarSignoZodiacal(dia, mes);
+            
+            if (signoZodiacal != null) {
+                System.out.println("Tu signo zodiacal es: " + signoZodiacal);
+            } else {
+                System.out.println("Fecha de nacimiento no válida.");
+            }
+        }
+    }
+
+    public static String determinarSignoZodiacal(int dia, int mes) {
+        if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19)) {
+            return "Aries";
+        } else if ((mes == 4 && dia >= 20) || (mes == 5 && dia <= 20)) {
+            return "Tauro";
+        } else if ((mes == 5 && dia >= 21) || (mes == 6 && dia <= 20)) {
+            return "Géminis";
+        } else if ((mes == 6 && dia >= 21) || (mes == 7 && dia <= 22)) {
+            return "Cáncer";
+        } else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 22)) {
+            return "Leo";
+        } else if ((mes == 8 && dia >= 23) || (mes == 9 && dia <= 22)) {
+            return "Virgo";
+        } else if ((mes == 9 && dia >= 23) || (mes == 10 && dia <= 22)) {
+            return "Libra";
+        } else if ((mes == 10 && dia >= 23) || (mes == 11 && dia <= 21)) {
+            return "Escorpio";
+        } else if ((mes == 11 && dia >= 22) || (mes == 12 && dia <= 21)) {
+            return "Sagitario";
+        } else if ((mes == 12 && dia >= 22) || (mes == 1 && dia <= 19)) {
+            return "Capricornio";
+        } else if ((mes == 1 && dia >= 20) || (mes == 2 && dia <= 18)) {
+            return "Acuario";
+        } else if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20)) {
+            return "Piscis";
+        } else {
+            return null; // Fecha de nacimiento no válida
+        }
+    }
+}  
+    
+
